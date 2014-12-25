@@ -1,14 +1,14 @@
 Package.describe({
-  git: 'https://github.com/CollectionFS/Meteor-cfs-collection-filters.git',
-  name: 'cfs:collection-filters',
-  version: '0.2.3',
-  summary: 'CollectionFS, adds FS.Collection filters'
+  git: 'https://github.com/gliesesoftware/cfs-collection-filters.git',
+  name: 'gliese:cfs-collection-filters',
+  version: '0.2.4',
+  summary: 'Gliese flavour of CollectionFS, adds FS.Collection filters (INTERNAL USE ONLY)'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use(['cfs:base-package@0.0.27', 'cfs:collection@0.5.3']);
+  api.use(['gliese:cfs-base@0.0.28', 'gliese:cfs-collection@0.5.4']);
 
   api.addFiles([
     'filters.js'
